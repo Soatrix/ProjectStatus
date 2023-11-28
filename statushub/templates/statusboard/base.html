@@ -18,15 +18,21 @@
         {% endblock %}
 
         {% block favicon %}
-        <link rel="icon" href="{% static "statusboard/images/statusboard-icon-default.png" %}">
+        <link rel="icon" href="{% static 'statusboard/images/statusboard-icon-default.png' %}">
         {% endblock %}
 
         {% block bootstrap_theme %}
         {% endblock %}
 
         {% block script %}
-        <script src="{% static "statusboard/js/bootstrap.bundle.min.js" %}"></script>
+        <script src="{% static 'statusboard/js/bootstrap.bundle.min.js' %}"></script>
         {% endblock %}
+		
+		<style>
+			a {
+				text-decoration: none;
+			}
+		</style>
 
     </head>
     <body class="d-flex flex-column h-100">

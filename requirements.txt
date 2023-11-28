@@ -1,2 +1,3 @@
 django
 django-statusboard
+django-background-tasks

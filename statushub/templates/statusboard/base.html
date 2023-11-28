@@ -1,0 +1,38 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html class="h-100">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#712cf9">
+        {% block meta_extra %}{% endblock %}
+        <title>{% block title %} Status | Avdair Systems {% endblock %}</title>
+
+        {% block style %}
+        <link rel="stylesheet" href="{% static 'statusboard/css/bootstrap.min.css' %}"/>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="{% static 'statusboard/css/statusboard.css' %}"/>
+        {% endblock %}
+
+        {% block favicon %}
+        <link rel="icon" href="{% static "statusboard/images/statusboard-icon-default.png" %}">
+        {% endblock %}
+
+        {% block bootstrap_theme %}
+        {% endblock %}
+
+        {% block script %}
+        <script src="{% static "statusboard/js/bootstrap.bundle.min.js" %}"></script>
+        {% endblock %}
+
+    </head>
+    <body class="d-flex flex-column h-100">
+        <main id="content">
+        {% block content %}
+        {% endblock %}
+        </main>
+    </body>
+</html>

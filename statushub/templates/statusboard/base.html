@@ -36,6 +36,8 @@
 
     </head>
     <body class="d-flex flex-column h-100">
+        {% load static %}
+        <img class="img-fluid w-100 h-50" style="margin-bottom: -50px" src="{% static 'img/banner.png' %}" />
         <main id="content">
         {% block content %}
         {% endblock %}

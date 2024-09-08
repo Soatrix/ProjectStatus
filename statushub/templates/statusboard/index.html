@@ -33,7 +33,7 @@
     </div>
     {% endfor %}
     {% if worst_status != None %}
-    <div class="alert alert-{{ worst_status|service_status_class:"" }}" role="alert">
+    <div class="alert bg-{{ worst_status|service_status_class:"" }} text-white" role="alert">
         {{ worst_status|service_status_summary_text:"" }}
     </div>
     {% endif %}

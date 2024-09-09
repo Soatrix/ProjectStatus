@@ -8,13 +8,13 @@
         <h1>{{ grp.name }}</h1>
         <div class="row">
             {% for srv in grp.services.priority_sorted %}
-                <div class="col-md-4">
+                <div class="col-sm-4">
                     <div class="card">
                         <div class="card-body">
                             {% if srv.href and srv.status == 0 %}
-                                <a href="{{ srv.href }}">{{ srv.name }}</a>
+                                <a class="h5" href="{{ srv.href }}">{{ srv.name }}</a>
                             {% else %}
-                                <span>{{ srv.name }}</span>
+                                <span class="h5">{{ srv.name }}</span>
                             {% endif %}
                             {% if srv.description %}
                                 <i class="bi bi-question-circle-fill" title="{{ srv.description }}"></i>

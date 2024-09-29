@@ -2,3 +2,5 @@ django
 django-statusboard
 django-background-tasks
 gunicorn
+cython
+setuptools
